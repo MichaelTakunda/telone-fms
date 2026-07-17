@@ -1,5 +1,7 @@
 <?php
-require_once "includes/auth.php";
+require_once __DIR__ . "/config/auth.php";
+require_once __DIR__ . "/includes/dashboard_stats.php";
+
 requireLogin();
 
 $fullName = $_SESSION["full_name"];
@@ -34,22 +36,27 @@ $role = $_SESSION["role"];
     <div class="cards">
         <div class="card">
             <h3>Total Faults</h3>
-            <p>Coming soon</p>
+            <p><?php echo $totalFaults; ?></p>
         </div>
 
         <div class="card">
             <h3>Pending Faults</h3>
-            <p>Coming soon</p>
+            <p><?php echo $pendingFaults; ?></p>
         </div>
 
         <div class="card">
             <h3>Assigned Faults</h3>
-            <p>Coming soon</p>
+            <p><?php echo $assignedFaults; ?></p>
+        </div>
+
+        <div class="card">
+            <h3>In Progress Faults</h3>
+            <p><?php echo $inProgressFaults; ?></p>
         </div>
 
         <div class="card">
             <h3>Resolved Faults</h3>
-            <p>Coming soon</p>
+            <p><?php echo $resolvedFaults; ?></p>
         </div>
     </div>
 </div>
