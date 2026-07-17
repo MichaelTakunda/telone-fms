@@ -31,4 +31,12 @@ $resolvedFaults = getCount(
     $conn,
     "SELECT COUNT(*) FROM faults WHERE status = 'Resolved'"
 );
+$totalUsers = getCount(
+    $conn,
+    "SELECT COUNT(*) FROM users"
+);
+$totalTechnicians = getCount(
+    $conn,
+    "SELECT COUNT(*) FROM users WHERE role = 'Technician'"
+);
 ?>

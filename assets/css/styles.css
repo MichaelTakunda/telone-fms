@@ -132,3 +132,28 @@ button:hover {
 .card h3 {
     color: #003366;
 }
+
+.form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 700px;
+}
+
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd1d9;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.success-message {
+    background: #e6f7e6;
+    color: #1b7f1b;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__ . "/config/auth.php";
 require_once __DIR__ . "/includes/dashboard_stats.php";
+// require_once __DIR__ . "/report_fault.php";
+
 
 requireLogin();
 
@@ -39,7 +41,7 @@ $role = $_SESSION["role"];
             <p><?php echo $totalFaults; ?></p>
         </div>
 
-        <div class="card">
+        <div class="card pending">
             <h3>Pending Faults</h3>
             <p><?php echo $pendingFaults; ?></p>
         </div>
@@ -57,6 +59,21 @@ $role = $_SESSION["role"];
         <div class="card">
             <h3>Resolved Faults</h3>
             <p><?php echo $resolvedFaults; ?></p>
+        </div>
+
+        <div class="card">
+            <h3>Total Operators</h3>
+            <p><?php echo $resolvedFaults; ?></p>
+        </div>
+
+        <div class="card">
+            <h3>Total Technicians</h3>
+            <p><?php echo $totalTechnicians; ?></p>
+        </div>
+
+        <div class="card">
+            <h3>Total Users</h3>
+            <p><?php echo $totalUsers; ?></p>
         </div>
     </div>
 </div>
