@@ -157,3 +157,66 @@ button:hover {
     border-radius: 5px;
     margin-bottom: 15px;
 }
+
+.table-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.table-card h2 {
+    margin-top: 0;
+    color: #003366;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table th {
+    background: #003366;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background: #f8f9fb;
+}
+
+.status-badge {
+    padding: 5px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-assigned {
+    background: #e2e3ff;
+    color: #383d8f;
+}
+
+.status-in-progress {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.status-resolved {
+    background: #d4edda;
+    color: #155724;
+}
