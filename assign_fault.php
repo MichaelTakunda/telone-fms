@@ -74,7 +74,7 @@ $technicians = $techStmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <title>Assign Fault - TelOne FMS</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
 
