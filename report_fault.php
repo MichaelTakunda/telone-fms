@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Report Fault - TelOne FMS</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel=stylesheet href ="./assets/css/styles.css"/>
 </head>
 <body>
 
