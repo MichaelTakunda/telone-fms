@@ -35,6 +35,7 @@ $role = $_SESSION["role"];
         <a href="technician_faults.php">My Faults</a>
         <a href="reports.php">Reports</a>
         <a href="fault_history.php">Fault History</a>
+        <a href="reports.php">Reports</a>
         <a href="logout.php">Logout</a>
     </div>
 
